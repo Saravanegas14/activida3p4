@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>repaso</title>
+</head>
+<div class="fondo"><img src="f3.jpg"height= 777px width= 1340px /></div>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+	
+	
+
+
+	.sara
+	{
+		position: absolute;
+		background-color: white;
+		width: 600px;
+		height: 100px;
+		top: 50px;
+		left:400px;
+		border: solid;
+		background-color: #D2B4DE;
+		font-size: 50px;
+		text-align: center;
+		font-family: 'Permanent Marker', cursive;
+}
+	.lolo
+	{
+		position: absolute;
+		background-color: white;
+		width: 250px;
+		height: 100px;
+		top: 170px;
+		left:400px;
+		border: solid 4px #D2B4DE; 
+		background-color:#17202A;
+		color: #FDFEFE;
+		font-size: 50px;
+		text-align: center;
+	font-family: 'Architects Daughter', cursive;
+	}
+	.clas
+	{
+		position: absolute;
+		background-color: white;
+		width: 250px;
+		height: 100px;
+		top: 290px;
+		left:400px;
+		border: solid;
+		background-color: #D2B4DE;
+		font-size: 50px;
+		font-family: 'Architects Daughter', cursive;
+		text-align: center;
+		
+	}
+	
+	.dito
+	{
+		position: absolute;
+		background-color: white;
+		width: 250px;
+		height: 100px;
+		top: 170px;
+		left:750px;
+		border: solid 4px #D2B4DE; 
+		background-color:#17202A;
+		color: #FDFEFE;
+		font-size: 50px;
+		text-align: center;
+		font-family: 'Architects Daughter', cursive;
+	}
+</style>
+<body>
+	<div class="clas" id="pan" onclick="clasico()">Puntos</div>
+	<div class="sara" id="pato" onclick="papas()">Numeros </div>
+	<label>
+		<input type="text" id="resta" class="lolo"></label>
+	<div class="dito" id="najos"></div>	
+<script type="text/javascript">
+		s=Math.floor(Math.random() * 10) + 0;
+		s1=Math.floor(Math.random() * 10) + 0;
+		s2=Math.floor(Math.random() * 1) + 2;
+	conta=0;
+	res=0;
+	tito=0;
+	oso=61;
+	O =setInterval(timpo,1000);
+	P =setInterval(cierre,100);
+
+	function timpo() 
+	{
+		tito=tito+1;
+		oso=oso-1;
+        najos.innerHTML=oso;
+	}
+	function papas() 
+	{
+	
+		if (s2==1) 
+		{	
+          cole=s+"-"+s1;
+          res=s-s1;
+		}
+		else
+		{
+          cole=s+"+"+s1;
+          res=s+s1;
+		}	
+		pato.innerHTML=cole;
+	}
+	
+	function clasico() 
+	{
+		
+		popo=resta.value;
+		if (popo==res) 
+		{
+			conta=conta+1;
+			pan.innerHTML=conta;
+			s=Math.floor(Math.random() * 10) + 0;
+		s1=Math.floor(Math.random() * 10) + 0;
+		s2=Math.floor(Math.random() * 1) + 2;
+			t= setTimeout(papas, 300);
+		}
+		else
+		{
+			conta=conta-1;
+			pan.innerHTML=conta;
+			n=Math.floor(Math.random() * 10) + 0;
+		s1=Math.floor(Math.random() * 10) + 0;
+		s2=Math.floor(Math.random() * 1) + 2;
+			t= setTimeout(papas, 300);
+		}
+	}
+	
+</script>
+</body>
+</html>
